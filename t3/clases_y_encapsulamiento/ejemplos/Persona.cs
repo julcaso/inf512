@@ -1,10 +1,11 @@
-/*
+/***************************************
 Autor:    Profesor Julio Castro Ortiz.
-Fecha:    22/4/2021.
+Fecha:    22/4/2021
+Semestre: 2021-10
 Objetivo: Ejemplo docente.
 Tema:     Encapsulación y constructores.
 Materias: INF512, INF513.
-*/
+****************************************/
 
 using System;
 
