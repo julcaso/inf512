@@ -11,9 +11,21 @@ using System;
 
 public class Persona{
     public string nombre, colorPelo, colorOjos;
-    public int edad;
+    private int edad;
     public float estatura, peso;
-    
+
+    public void setEdad(int edad){
+        if (edad > 125){
+            Console.WriteLine("Esta edad no es valida.");
+        } else {
+            this.edad = edad;
+        }
+    }
+
+    public int getEdad(){
+        return edad;
+    }
+
     // Constructor sin argumentos.
     // Si no se declara, es añadido por el compilador cuando no existen otros constructores.
     public Persona(){
@@ -37,6 +49,7 @@ public class Persona{
         Console.WriteLine("Nombre: " + nombre);
         Console.WriteLine("Color de Pelo: " + colorPelo);
         Console.WriteLine("Color de Ojos: " + colorOjos);
+        Console.WriteLine("Edad         : " + edad);
     }
 }
 
@@ -45,15 +58,17 @@ public class PersonaTest{
             Persona myPers1 = new Persona();
             Persona myPers2 = new Persona("Julio Castro", "Negro");
             Persona myPers3 = new Persona("Julio Castro", "Negro", "Negros");
+            Persona myPers4 = new Persona("Jessica Rodriguez","Negro","Marrones");
 
+            //myPers1.edad=19;
+            //myPers1.nombre="Reynni";
+
+            myPers4.setEdad(35);
+            Console.WriteLine("Valor de edad: " + myPers4.getEdad());
+           
             myPers1.desplegarPersona();
             myPers2.desplegarPersona();
             myPers3.desplegarPersona();
-
-            myPers1.edad=19;
-            myPers1.nombre="Reynni";
-
-            myPers1.desplegarPersona();
-
+            myPers4.desplegarPersona();
         }
     }
