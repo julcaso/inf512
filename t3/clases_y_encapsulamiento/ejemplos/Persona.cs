@@ -10,9 +10,9 @@ Materias: INF512, INF513.
 using System;
 
 public class Persona{
-    public string nombre, colorPelo, colorOjos;
+    private string nombre, colorPelo, colorOjos;
     private int edad;
-    public float estatura, peso;
+    private float estatura, peso;
 
     public void setEdad(int edad){
         if (edad > 125){
@@ -54,21 +54,21 @@ public class Persona{
 }
 
 public class PersonaTest{
-        static void Main(){
-            Persona myPers1 = new Persona();
-            Persona myPers2 = new Persona("Julio Castro", "Negro");
-            Persona myPers3 = new Persona("Julio Castro", "Negro", "Negros");
-            Persona myPers4 = new Persona("Jessica Rodriguez","Negro","Marrones");
+    static void Main(){
+        Persona myPers1 = new Persona();
+        Persona myPers2 = new Persona("Julio Castro", "Negro");
+        Persona myPers3 = new Persona("Julio Castro", "Negro", "Negros");
+        Persona myPers4 = new Persona("Jessica Rodriguez","Negro","Marrones");
 
-            //myPers1.edad=19;
-            //myPers1.nombre="Reynni";
-
-            myPers4.setEdad(35);
-            Console.WriteLine("Valor de edad: " + myPers4.getEdad());
+        myPers4.setEdad(35);
+        Console.WriteLine("Valor de edad: " + myPers4.getEdad());
            
-            myPers1.desplegarPersona();
-            myPers2.desplegarPersona();
-            myPers3.desplegarPersona();
-            myPers4.desplegarPersona();
-        }
+        myPers1.desplegarPersona();
+        myPers2.desplegarPersona();
+        myPers3.desplegarPersona();
+        myPers4.desplegarPersona();
+
+        //Haciendo que se pierda la referencia de la variable al objeto
+        myPers4 = null;
     }
+}
