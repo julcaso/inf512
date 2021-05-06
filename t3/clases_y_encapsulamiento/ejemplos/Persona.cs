@@ -10,6 +10,9 @@ Materias: INF512, INF513.
 using System;
 
 public class Persona{
+    
+    //Variables de clase o variables de instancia.
+    
     private string nombre, colorPelo, colorOjos;
     private int edad;
     private float estatura, peso;
