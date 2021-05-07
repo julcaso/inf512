@@ -11,15 +11,16 @@ using System;
 
 public class Persona{
     
-    //Variables de instancia.
+    // Variables de instancia.
     
     private string nombre, colorPelo, colorOjos;
     private int edad;
     private float estatura, peso;
 
-    //Variable estatica: ejemplo.
+    // Variable estatica: ejemplo.
     private static int contadorObjetos;
 
+    // Metodo estatico: ejemplo.
     public static int getContadorObjetos(){
         return contadorObjetos;
     }
