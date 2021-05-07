@@ -18,9 +18,11 @@ public class Persona{
     private float estatura, peso;
 
     // Variable estatica: ejemplo.
+    
     private static int contadorObjetos;
 
     // Metodo estatico: ejemplo.
+    
     public static int getContadorObjetos(){
         return contadorObjetos;
     }
@@ -39,6 +41,7 @@ public class Persona{
 
     // Constructor sin argumentos.
     // Si no se declara, es añadido por el compilador cuando no existen otros constructores.
+    
     public Persona(){
         nombre = "*********";
         edad = 0;
@@ -83,9 +86,11 @@ public class PersonaTest{
         myPers4.desplegarPersona();
         
         // Haciendo que se pierda la referencia de la variable al objeto.
+        
         myPers4 = null;
 
         // Haciendo uso de un método estático.
+        
         Console.WriteLine("Cantidad de objetos instanciados: {0}", Persona.getContadorObjetos());
         
     }
