@@ -6,6 +6,7 @@ Objetivo: Ejemplo docente.
 Tema:     Constructores y destructores.
 Materias: INF512, INF513.
 ****************************************/
+
 using System;
 class TelefonoMovil{
 
