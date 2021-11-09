@@ -1,3 +1,11 @@
+/***************************************
+Autor:    Profesor Julio Castro Ortiz.
+Fecha:    11/8/2021.
+Semestre: 2021-20.
+Objetivo: Ejemplo docente.
+Tema:     Constructores y destructores.
+Materias: INF512, INF513.
+****************************************/
 using System;
 class TelefonoMovil{
 
@@ -8,7 +16,6 @@ Realice los cambios en los atributos y metodos que sean necesarios para encapsul
 la clase TelefonoMovil.
   
 */
-
     public string marca;
     public string color;
     public string modelo;
@@ -16,6 +23,7 @@ la clase TelefonoMovil.
     public int size;
     public string estado;
     
+    //Constructor por defecto
     public TelefonoMovil(){
         marca = "iPhone";
         color = "Negro";
@@ -24,18 +32,17 @@ la clase TelefonoMovil.
         size = 7;
         estado = "apagado";        
     }
-
+    
+    //Constructor con argumentos
     public TelefonoMovil(string marca, string color){
         this.marca = marca;
         this.color = color;
     }
 
-
 /* 
 Metodos de acceso: getters y setters.
 En este espacio defina los metodos get y set que sean necesarios para 
 encapsular la clase TelefonoMovil.
-  
 */
 
     public void desplegarTelefonoMovil(){
