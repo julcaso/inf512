@@ -26,6 +26,7 @@ class Blusa{
         precio = 0.0;
     }
 
+    //Constructor con argumentos
     public Blusa(string color, int size, string modelo, double precio){
         Console.WriteLine("\nEste tipo de blusa fue requerido por una tienda y hay que crearla a su gusto");
         this.color = color;
@@ -34,6 +35,7 @@ class Blusa{
         this.precio = precio;
     }
     
+    //Destructor
     ~Blusa(){
        Console.WriteLine("\nLa Blusa ha pasado de moda. Será retirada de la colección"); 
     }
