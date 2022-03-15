@@ -40,7 +40,7 @@ public class Mouse{
     }
 
     public string getColor(){
-        return this.color;
+        return this.color.ToLower();
     }
 
     public void setColor(string color){
@@ -54,17 +54,25 @@ public class Mouse{
             this.color = null;
         }
     }
+
+    public void desplegarInformacion(){
+        Console.WriteLine("Marca: " + this.marca);
+        Console.WriteLine("Modelo: " + this.modelo);
+        Console.WriteLine("Tipo: " + this.tipo);
+        Console.WriteLine("Color: " + this.color);
+        Console.WriteLine("Color: " + getColor());
+
+    }
 }
 
 public class MouseTest{
     static void Main(){
-        Mouse raton1 = new Mouse();
-
+        
         raton1.marca = "Dell";
         raton1.modelo = "WM126";
         raton1.setPrecio(18.99f);
         raton1.setColor("rojo");
 
-        Console.WriteLine("¿Que color seteaste? " + raton1.getColor());
+        raton1.desplegarInformacion();
     }
 }
