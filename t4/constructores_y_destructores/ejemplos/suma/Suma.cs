@@ -32,6 +32,13 @@ class Suma{
         Console.WriteLine("La suma flotante es: {0} ", this.val3 + this.val4);
 
     }
+
+    ~Suma(){
+        Console.WriteLine("El programa terminó.");
+        Console.WriteLine("Los objetos fueron eliminados de la memoria.");
+    }
+
+    //ALT + 126 = ~
 }
 
 class SumaTest{
@@ -40,6 +47,9 @@ class SumaTest{
         Suma sm1 = new Suma();
         Suma sm2 = new Suma(56, 78);
         Suma sm3 = new Suma(68.0f, 85.4f);
-       
+
+        //Eliminando la referencia del objeto Suma en la variable 
+        //de referencia a objetos sm1.
+        sm1 = null;       
     }
 }
