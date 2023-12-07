@@ -26,6 +26,6 @@ class Persona{
 class PersonaTest{
     static void Main(){
         Persona p1 = new Persona();
-        p1.asociarComputadora();
+        p1.asociarComputadora("DELL LATITUDE E750", 1600.0f);
     }
 }
