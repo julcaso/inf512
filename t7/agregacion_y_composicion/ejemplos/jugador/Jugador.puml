@@ -1,0 +1,28 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class Jugador {
+    -nombre: string
+    -numeroCamiseta: int
+    +GetNombre(): string
+    +SetNombre(value: string): void
+    +GetNumeroCamiseta(): int
+    +SetNumeroCamiseta(value: int): void
+    +Jugador(nombre: string, numeroCamiseta: int)
+}
+
+class Equipo {
+    -nombre: string
+    -jugadores: Jugador[]
+    +GetNombre(): string
+    +SetNombre(value: string): void
+    +GetJugadores(): Jugador[]
+    +SetJugadores(value: Jugador[]): void
+    +MostrarJugadores(): void
+    +Equipo(nombre: string, jugadores: Jugador[])
+}
+
+Equipo "1 " o-- "0..* " Jugador
+
+@enduml
